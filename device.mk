@@ -116,8 +116,8 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # MSM IRQ Balancer configuration file
-#PRODUCT_COPY_FILES += \
-#    device/lge/bullhead/msm_irqbalance.conf:vendor/etc/msm_irqbalance.conf
+PRODUCT_COPY_FILES += \
+    device/lge/bullhead/msm_irqbalance.conf:vendor/etc/msm_irqbalance.conf
 
 # Power configuration file
 PRODUCT_COPY_FILES += \
@@ -420,12 +420,13 @@ endif
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # facelock properties
-ro.facelock.black_timeout=400
-ro.facelock.det_timeout=1500
-ro.facelock.rec_timeout=2500
-ro.facelock.lively_timeout=2500
-ro.facelock.est_max_time=600
-ro.facelock.use_intro_anim=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.facelock.black_timeout=400 \
+    ro.facelock.det_timeout=1500 \
+    ro.facelock.rec_timeout=2500 \
+    ro.facelock.lively_timeout=2500 \
+    ro.facelock.est_max_time=600 \
+    ro.facelock.use_intro_anim=false
 
 $(call inherit-product-if-exists, hardware/qcom/msm8994/msm8992.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
