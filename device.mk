@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     mm-qcamera-app
 
+# Snap Config
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.cpp.duplication=false
+
 # Sensor & activity_recognition HAL
 PRODUCT_PACKAGES += \
     sensors.bullhead \
