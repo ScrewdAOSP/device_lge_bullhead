@@ -1,11 +1,11 @@
 [
  {
-   "repository":  "DirtyUnicorns/android_kernel_lge_bullhead",
+   "repository":  "screwdAOSP/ThugLife_bullhead",
    "target_path": "kernel/lge/bullhead",
-   "branch":      "m"
+   "branch":      "master"
   },
   {
-    "repository": "DirtyUnicorns/android_vendor_lge",
+    "repository": "screwdAOSP/proprietary_vendor_lge",
     "target_path": "vendor/lge",
     "branch":      "m"
   }
