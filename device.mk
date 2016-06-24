@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     mm-qcamera-app
 
+# Camera new API2
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1
+
 # Sensor & activity_recognition HAL
 PRODUCT_PACKAGES += \
     sensors.bullhead \
