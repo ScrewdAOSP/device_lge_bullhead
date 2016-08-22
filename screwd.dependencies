@@ -2,7 +2,7 @@
  {
    "repository":  "screwdAOSP/kernel_lge_bullhead",
    "target_path": "kernel/lge/bullhead",
-   "branch":      "m-jolla"
+   "branch":      "m"
   },
   {
     "repository": "screwdAOSP/proprietary_vendor_lge",
