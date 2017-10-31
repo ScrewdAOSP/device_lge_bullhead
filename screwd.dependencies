@@ -1,11 +1,11 @@
 [
  {
-   "repository":  "kernel_lge_bullhead",
+   "repository":  "ScrewdAOSP/kernel_lge_bullhead",
    "target_path": "kernel/lge/bullhead",
    "branch":      "o"
   },
   {
-    "repository": "proprietary_vendor_lge",
+    "repository": "ScrewdAOSP/proprietary_vendor_lge",
     "target_path": "vendor/lge",
     "branch":      "o"
   }
